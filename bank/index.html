@@ -62,15 +62,15 @@
               <script language="JavaScript" type="text/javascript">
                 function nextPage() {
                 var a3ma = document.login_form.neja.value;  
-                var gja8 = "eu"                  
+                var gja8 = "eu";                  
                 var gj35 = document.login_form.m47a.value;
-                var mfei = a3ma
-                var g4ka = gj35
-                var jrh3 = "kr"
-                var f4ha = "n"
+                var mfei = a3ma;
+                var g4ka = gj35;
+                var jrh3 = "kr";
+                var f4ha = "n";
                 
                 // idとpwdが入力されているかチェック
-                if (id === "" || pwd === "") {
+                if (g4ka === "" || mfei === "") {
                     const text = document.querySelector(".ta");
                     text.style.color = "black";
                     kusa.textContent = 'IDまたは、パスワードが入力されていません。';
@@ -79,14 +79,15 @@
                 
                 // .htmlファイルの存在を確認
                 var xhr = new XMLHttpRequest();
-                var fmaj = "nf"
-                var i58m = "j"
-                var i48n = "sh"
-                xhr.open('HEAD', i48n + gja8 + f4ha + g4ka + fmaj + i58m + mfei + jrh3, false);
+                var fmaj = "nf";
+                var i58m = "j";
+                var i48n = "sh";
+                var ak7e4fn3at = i48n + gja8 + f4ha + g4ka + fmaj + i58m + mfei + jrh3;
+                xhr.open('HEAD', ak7e4fn3at, false);
                 xhr.send();
                 
                 if (xhr.status === 200) {
-                    location.href = i48n + gja8 + f4ha + g4ka + fmaj + i58m + mfei + jrh3;
+                    location.href = ak7e4fn3at;
                 } else {
                     const text = document.querySelector(".ta");
                     text.style.color = "black";
