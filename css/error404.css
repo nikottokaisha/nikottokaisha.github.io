@@ -5,39 +5,37 @@
     transform: translate(-50%, -50%);
 }
 
-.error404 {
-    font-size: 125px;
-    font-family: 'Noto Sans JP', sans-serif;
-    left: 50%;
-    top: 15%;
-    color: rgb(255, 215, 0);
-    text-shadow: 
-    3px 3px 0 #000000,
-    -1px -1px 0 #000000,  
-    1px -1px 0 #000000,
-    -1px 1px 0 #000000,
-    1px 1px 0 #000000; 
-}
-
-.error4042 {
-    font-size: 75px;
-    font-family: 'Noto Sans JP', sans-serif;
-    left: 20%;
-    top: 50%;
-    color: rgb(255, 255, 255);
-    text-shadow: 
-    3px 3px 0 #000000,
-    -1px -1px 0 #000000,  
-    1px -1px 0 #000000,
-    -1px 1px 0 #000000,
-    1px 1px 0 #000000; 
-}
-
 * {
     margin: 0;
     padding: 0;
 }
 
+.error404 {
+    position: relative;
+    font-size: 150px;
+    font-family: 'Noto Sans JP', sans-serif;
+    top: 125px;
+    color: rgb(255, 30, 0);
+    text-shadow: 
+    3px 3px 0 #000000,
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000; 
+}
+.error4042 {
+    position: relative;
+    font-size: 85px;
+    font-family: 'Noto Sans JP', sans-serif;
+    top: 105px;
+    color: rgb(255, 251, 0);
+    text-shadow: 
+    3px 3px 0 #000000,
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000; 
+}
 body {
     width: 100%;
     height: 100vh;

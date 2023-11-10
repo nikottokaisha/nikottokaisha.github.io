@@ -13,15 +13,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.ue {
-    position: fixed;
-    background-color: #00407f;
-    height: 100px;
-    width: 100%;
-    top:0px;
-    z-index: 1;
-}
-
 .buttons {
     position: relative;
     top:20%;
@@ -39,16 +30,39 @@ body {
     position: relative;
 }
 
+.ue {
+    position: fixed;
+    background-color: rgb(0, 75, 141);
+    height: 95px;
+    width: 2000px;
+    top:-17.5px;
+    left: -20px;
+    z-index: 1;
+    font-size: 22.5px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.ue1 {
+    z-index: 2;
+    position: fixed;
+    top: -2.5px;
+    left: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 57.5px;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-shadow:
+    1px 1px 0 #000000, -1px -1px 0 #000000,
+    -1px 1px 0 #000000, 1px -1px 0 #000000,
+    0px 1px 0 #000000,  0-1px 0 #000000,
+    -1px 0 0 #000000, 1px 0 0 #000000;
+    text-decoration: none;
+}
+
 .banner2 {
     position: relative;
     top: 40%;
     left: 20%;
     transform: translate(-50%, -50%);
-    width: 650px;
-}
-
-.video {
-    z-index: 2;
     width: 650px;
 }
 
@@ -122,7 +136,7 @@ body {
     align-items: center;
     padding: 0 24px;
     height: 100%;
-    color: black;
+    color:black;
 }
 
 .button__icon {
