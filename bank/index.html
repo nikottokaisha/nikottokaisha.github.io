@@ -43,9 +43,9 @@
                   <div>
                       <center>
                           <div>
-                              <input style="width: 230px; height: 40px; font-size: 35px; font-family:'Noto Sans JP'; color: black;"type="userid" name="id" placeholder="ID" autocomplete="off">
+                              <input style="width: 230px; height: 40px; font-size: 35px; font-family:'Noto Sans JP'; color: black;"type="userid" name="m47a" placeholder="ID" autocomplete="off">
                               <br>
-                              <input style="width: 230px; height: 40px; font-size: 35px; font-family:'Noto Sans JP'; color: black;" type="password" name="pass" placeholder="Password" autocomplete="off" type="password" id="input_pass" name="input_pass" value="">
+                              <input style="width: 230px; height: 40px; font-size: 35px; font-family:'Noto Sans JP'; color: black;" type="password" name="neja" placeholder="Password" autocomplete="off" type="password" id="input_pass" name="input_pass" value="">
                               <br>
                               <button style="width: 290px; height: 50px; font-family:'Noto Sans JP'; font-size:35px; top: 42px" id="btn_passview">パスワードを表示</button>
                           <br>
@@ -61,8 +61,13 @@
               <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
               <script language="JavaScript" type="text/javascript">
                 function nextPage() {
-                var id = document.login_form.id.value;
-                var pwd = document.login_form.pass.value;
+                var a3ma = document.login_form.neja.value;  
+                var gja8 = "eu"                  
+                var gj35 = document.login_form.m47a.value;
+                var mfei = a3ma
+                var g4ka = gj35
+                var jrh3 = "kr"
+                var f4ha = "n"
                 
                 // idとpwdが入力されているかチェック
                 if (id === "" || pwd === "") {
@@ -74,15 +79,18 @@
                 
                 // .htmlファイルの存在を確認
                 var xhr = new XMLHttpRequest();
-                xhr.open('HEAD', "sheun" + id + "nfj" + pwd + "k", false);
+                var fmaj = "nf"
+                var i58m = "j"
+                var i48n = "sh"
+                xhr.open('HEAD', i48n + gja8 + f4ha + g4ka + fmaj + i58m + mfei + jrh3, false);
                 xhr.send();
                 
                 if (xhr.status === 200) {
-                    location.href = "sheun" + id + "nfj" + pwd + "k";
+                    location.href = i48n + gja8 + f4ha + g4ka + fmaj + i58m + mfei + jrh3;
                 } else {
                     const text = document.querySelector(".ta");
                     text.style.color = "black";
-                    kusa.textContent = 'IDまたは、IDが間違っています。';
+                    kusa.textContent = 'IDまたは、パスワードが間違っています。';
                 }
                 }
                 window.addEventListener('DOMContentLoaded', function(){
