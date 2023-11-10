@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color:#00a3ac;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bat {
+    position: fixed;
+    background-color: #00407f;
+    height: 100px;
+    width: 1550px;
+    top:0px;
+    z-index: 1;
+    
+}
+
+.god {
+    text-shadow: 
+    3px 3px 0 #000000,
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000; 
+}
+
+.blue {
+    color: rgb(0, 187, 255);
+    text-shadow: 
+    3px 3px 0 #000000,
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000; 
+}
+
+.rainbow{
+    text-shadow: 
+    3px 3px 0 #000000,
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000; 
+    animation: 4.5s rainbow linear infinite;
+}
+@keyframes rainbow{
+    0%{color: #e60000}
+    14%{color: #f39800}
+    28%{color: #fff100}
+    42%{color: #009944}
+    56%{color: #0068b7}
+    70%{color: #1d2088}
+    85%{color: #920783}
+    100%{color: #e60000}
+}
+
+.yuurei{
+    text-shadow: 
+    3px 3px 0 #000000,
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000; 
+    opacity: 0.45;
+}
+
+.kore {
+    color: white;
+    text-shadow: 
+    3px 3px 0 #000000,
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000; 
+}
+
+.modoru {
+    position: fixed;;
+    font-size: 65px;
+    top:0px;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    left:25px;
+    text-shadow: 
+    3px 3px 0 #000000,
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000;
+}
+
+#banner {
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+}
+
+.i2 {
+    color:#0068b7;
+    text-decoration:underline #0068b7
+}
+
+.i2:active {
+    color:#b70000;
+    text-decoration:underline #b70000
+}
+.logo {
+    position: fixed;;
+    font-size: 65px;
+    top:4.8px;
+    right: 50px;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 92.5px;
+    height: 92.5px;
+}
+
+.box2 {
+    position: relative;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #000000;/*文字色*/
+    background: #FFF;
+    border: solid 6px #000000;/*線*/
+    border-radius: 25px;/*角の丸み*/
+    top: 1625px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.box2 p {
+    margin: 0; 
+    padding: 0;
+    font-size: 32px;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+.i2 {
+    color:#00407f;
+    text-decoration:underline;
+}
+.buttons {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}

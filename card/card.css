@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color:#00a3ac;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ue {
+    position: fixed;
+    background-color: #00407f;
+    height: 100px;
+    width: 100%;
+    top:0px;
+    z-index: 1;
+}
+
+.buttons {
+    position: relative;
+    top:12.0%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.bat {
+    position: fixed;
+    background-color: #00407f;
+    height: 100px;
+    width: 1550px;
+    top:0px;
+    z-index: 1;
+    
+}
+
+.modoru {
+    position: fixed;;
+    font-size: 65px;
+    top:0px;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    left:25px;
+    text-shadow: 
+    3px 3px 0 #000000,
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000;
+}
+
+.logo {
+    top: 36.2%;
+    position: relative;
+}
+
+.banner2 {
+    position: relative;
+    top: 36.2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+}
+
+.logo2 {
+    position: fixed;;
+    font-size: 65px;
+    top:4.8px;
+    right: 50px;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 92.5px;
+    height: 92.5px;
+}
+
+.download {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 35px;
+    background-color:#00a3ac;
+    border-radius: 125px;
+    border: 2.5px solid #ffffff;
+    color: black;
+}
+
+.download:hover {
+    background: #ffffff;
+    font-size: 35px;
+    color: black;
+}
+
+.download:active {
+    background: rgb(255, 255, 255);
+    font-size: 35px;
+    color: black;
+}
+
+.osirase {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 35px;
+    background-color:#00a3ac;
+    border-radius: 125px;
+    border: 2.5px solid #ffffff;
+    color: black;
+}
+
+.osirase:hover {
+    background: #ffffff;
+    font-size: 35px;
+    color: black;
+}
+
+.osirase:active {
+    background: rgb(255, 255, 255);
+    font-size: 35px;
+    color: black;
+}
+
+.discord {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 35px;
+    background-color:#00a3ac;
+    border-radius: 125px;
+    border: 2.5px solid #ffffff;
+    color: black;
+}
+
+.discord:hover {
+    background: #ffffff;
+    font-size: 35px;
+    color: black;
+}
+
+.discord:active {
+    background: #ffffff;
+    font-size: 35px;
+    color: black;
+}
+
+.button__text,
+.button__icon {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    height: 100%;
+    color: black;
+}
+
+.button__icon {
+    font-size: 1.5em;
+    background: rgba(0, 0, 0, 0.08)
+}

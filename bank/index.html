@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet"> 
+    <title>NikottoBanks</title>
+    <link rel="stylesheet" href="banks.css">
+    <link rel="icon" type="image/png" href="https://nikottokaisha.github.io/image/banks.png">
+    <meta property="twitter:title" content="ニコット">
+    <meta property="twitter:description" content="NikottoCard">
+    <meta property="twitter:image" content="">
+    <meta name="theme-color" content="#F1F1F1">
+</head>
+<body>
+    <p class="bat"></p>
+    <a class="modoru" href="https://nikottokaisha.github.io/">戻る</a>
+    <a href="https://nikottokaisha.github.io/"><img src="https://nikottokaisha.github.io/image/favicon.png" class="logo"></a> 
+    <a class="texts" href="https://nikottokaisha.github.io/bank/create/">バンクを作る</a>
+    <header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+      <body>
+          <div>
+              <!--フォーム-->
+              <form name="login_form">
+                  <center>
+                      <h1 style="font-size: 65px; font-family: 'Noto Sans JP', sans-serif;">ログイン</h1>
+                      <p style="font-size: 32.5px; font-family: 'Noto Sans JP', sans-serif;">ID, Passwordご入力の上, 「ログイン」ボタンをクリックしてください</p>
+                  </center>
+                  <div>
+                      <center>
+                          <div>
+                              <input style="width: 230px; height: 40px; font-size: 35px; font-family:'Noto Sans JP'; color: black;"type="userid" name="id" placeholder="ID" autocomplete="off">
+                              <br>
+                              <input style="width: 230px; height: 40px; font-size: 35px; font-family:'Noto Sans JP'; color: black;" type="password" name="pass" placeholder="Password" autocomplete="off" type="password" id="input_pass" name="input_pass" value="">
+                              <br>
+                              <button style="width: 290px; height: 50px; font-family:'Noto Sans JP'; font-size:35px; top: 42px" id="btn_passview">パスワードを表示</button>
+                          <br>
+                          <br>
+                    <button style="width: 150px; height: 60px; font-size: 35px; font-family:'Noto Sans JP'; color:black;" type="button" onClick="nextPage()" onchange="nextPage()">ログイン</button>
+                  </center>
+                  <center>
+                    <p class="ta" id="kusa"></p>
+                  </center>
+                  </div>
+              </form>
+              <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+              <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+              <script language="JavaScript" type="text/javascript">
+                function nextPage() {
+                var id = document.login_form.id.value;
+                var pwd = document.login_form.pass.value;
+                
+                // idとpwdが入力されているかチェック
+                if (id === "" || pwd === "") {
+                    const text = document.querySelector(".ta");
+                    text.style.color = "black";
+                    kusa.textContent = 'IDまたは、パスワードが入力されていません。';
+                    return;
+                }
+                
+                // .htmlファイルの存在を確認
+                var xhr = new XMLHttpRequest();
+                xhr.open('HEAD', "sheun" + id + "nfj" + pwd + "k", false);
+                xhr.send();
+                
+                if (xhr.status === 200) {
+                    location.href = "sheun" + id + "nfj" + pwd + "k";
+                } else {
+                    const text = document.querySelector(".ta");
+                    text.style.color = "black";
+                    kusa.textContent = 'IDまたは、IDが間違っています。';
+                }
+                }
+                window.addEventListener('DOMContentLoaded', function(){
+              	let btn_passview = document.getElementById("btn_passview");	let input_pass = document.getElementById("input_pass");
+	            btn_passview.addEventListener("click", (e)=>{
+		        e.preventDefault();
+		       if( input_pass.type === 'password' ) {
+			   input_pass.type = 'text';			
+               btn_passview.textContent = 'パスワードを隠す';
+               btn_passview.style.width = "290px";
+		       } else {
+               btn_passview.style.width = "290px";   
+               input_pass.type = 'password';	
+			   btn_passview.textContent = 'パスワードを表示';		}	});
+});
+                </script>
+</body>
+</script>
+</html>
