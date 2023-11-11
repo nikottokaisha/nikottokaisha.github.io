@@ -87,7 +87,7 @@ body {
     height: 92.5px;
 }
 
-.download {
+.k {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 35px;
     background-color:#00a3ac;
@@ -96,19 +96,19 @@ body {
     color: black;
 }
 
-.download:hover {
+.k:hover {
     background: #ffffff;
     font-size: 35px;
     color: black;
 }
 
-.download:active {
+.k:active {
     background: rgb(255, 255, 255);
     font-size: 35px;
     color: black;
 }
 
-.osirase {
+.t {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 35px;
     background-color:#00a3ac;
@@ -117,19 +117,19 @@ body {
     color: black;
 }
 
-.osirase:hover {
+.t:hover {
     background: #ffffff;
     font-size: 35px;
     color: black;
 }
 
-.osirase:active {
+.t:active {
     background: rgb(255, 255, 255);
     font-size: 35px;
     color: black;
 }
 
-.discord {
+.i {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 35px;
     background-color:#00a3ac;
@@ -138,13 +138,34 @@ body {
     color: black;
 }
 
-.discord:hover {
+.i:hover {
     background: #ffffff;
     font-size: 35px;
     color: black;
 }
 
-.discord:active {
+.i:active {
+    background: #ffffff;
+    font-size: 35px;
+    color: black;
+}
+
+.d {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 35px;
+    background-color:#00a3ac;
+    border-radius: 125px;
+    border: 2.5px solid #ffffff;
+    color: black;
+}
+
+.d:hover {
+    background: #ffffff;
+    font-size: 35px;
+    color: black;
+}
+
+.d:active {
     background: #ffffff;
     font-size: 35px;
     color: black;

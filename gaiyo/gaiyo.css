@@ -100,7 +100,13 @@ body {
 }
 
 .i2 {
-    text-decoration:underline #000000
+    color:#85c3f3;
+    text-decoration:underline #85c3f3
+}
+
+.i2:active {
+    color:#b70000;
+    text-decoration:underline #b70000
 }
 
 .gaiyo {

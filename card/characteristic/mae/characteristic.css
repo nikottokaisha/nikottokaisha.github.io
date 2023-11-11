@@ -22,6 +22,16 @@ body {
     z-index: 1;
 }
 
+.i2 {
+    color:#0068b7;
+    text-decoration:underline #0068b7
+}
+
+.i2:active {
+    color:#b70000;
+    text-decoration:underline #b70000
+}
+
 .modoru {
     position: fixed;;
     font-size: 65px;
@@ -60,6 +70,47 @@ body {
     height: 92.5px;
 }
 
+.god {
+    text-shadow: 
+    3px 3px 0 #000000,
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000; 
+}
+
+.rainbow{
+    text-shadow: 
+    3px 3px 0 #000000,
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000; 
+    animation: 4.5s rainbow linear infinite;
+}
+@keyframes rainbow{
+    0%{color: #e60000}
+    14%{color: #f39800}
+    28%{color: #fff100}
+    42%{color: #009944}
+    56%{color: #0068b7}
+    70%{color: #1d2088}
+    85%{color: #920783}
+    100%{color: #e60000}
+}
+
+.yuurei{
+    text-shadow: 
+    3px 3px 0 #000000,
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000; 
+    opacity: 0.45;
+}
+
+
+
 .box2 {
     position: relative;
     padding: 0.5em 1em;
@@ -69,7 +120,7 @@ body {
     background: #FFF;
     border: solid 6px #000000;/*線*/
     border-radius: 25px;/*角の丸み*/
-    top: 820px;
+    top: 86.5em;
     font-family: 'Noto Sans JP', sans-serif;
 }
 .box2 p {

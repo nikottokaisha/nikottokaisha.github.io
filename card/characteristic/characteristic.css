@@ -22,6 +22,16 @@ body {
     z-index: 1;
 }
 
+.siro {
+    color: white;
+    text-shadow: 
+    3px 3px 0 #000000,
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000; 
+}
+
 .i2 {
     color:#0068b7;
     text-decoration:underline #0068b7
@@ -109,8 +119,6 @@ body {
     opacity: 0.45;
 }
 
-
-
 .box2 {
     position: relative;
     padding: 0.5em 1em;
@@ -120,7 +128,7 @@ body {
     background: #FFF;
     border: solid 6px #000000;/*線*/
     border-radius: 25px;/*角の丸み*/
-    top: 86.5em;
+    top: 65px;
     font-family: 'Noto Sans JP', sans-serif;
 }
 .box2 p {

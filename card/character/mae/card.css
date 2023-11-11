@@ -23,6 +23,65 @@ body {
     
 }
 
+.god {
+    text-shadow: 
+    3px 3px 0 #000000,
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000; 
+}
+
+.blue {
+    color: rgb(0, 187, 255);
+    text-shadow: 
+    3px 3px 0 #000000,
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000; 
+}
+
+.rainbow{
+    text-shadow: 
+    3px 3px 0 #000000,
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000; 
+    animation: 4.5s rainbow linear infinite;
+}
+@keyframes rainbow{
+    0%{color: #e60000}
+    14%{color: #f39800}
+    28%{color: #fff100}
+    42%{color: #009944}
+    56%{color: #0068b7}
+    70%{color: #1d2088}
+    85%{color: #920783}
+    100%{color: #e60000}
+}
+
+.yuurei{
+    text-shadow: 
+    3px 3px 0 #000000,
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000; 
+    opacity: 0.45;
+}
+
+.kore {
+    color: white;
+    text-shadow: 
+    3px 3px 0 #000000,
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000; 
+}
+
 .modoru {
     position: fixed;;
     font-size: 65px;
@@ -48,6 +107,15 @@ body {
     max-width: 100%;
 }
 
+.i2 {
+    color:#0068b7;
+    text-decoration:underline #0068b7
+}
+
+.i2:active {
+    color:#b70000;
+    text-decoration:underline #b70000
+}
 .logo {
     position: fixed;;
     font-size: 65px;
@@ -61,16 +129,6 @@ body {
     height: 92.5px;
 }
 
-.i2 {
-    color:#0068b7;
-    text-decoration:underline #0068b7
-}
-
-.i2:active {
-    color:#b70000;
-    text-decoration:underline #b70000
-}
-
 .box2 {
     position: relative;
     padding: 0.5em 1em;
@@ -80,7 +138,7 @@ body {
     background: #FFF;
     border: solid 6px #000000;/*線*/
     border-radius: 25px;/*角の丸み*/
-    top: 1025px;
+    top: 1625px;
     font-family: 'Noto Sans JP', sans-serif;
 }
 .box2 p {
@@ -90,6 +148,10 @@ body {
     font-family: 'RocknRoll One', sans-serif;
 }
 
+.i2 {
+    color:#00407f;
+    text-decoration:underline;
+}
 .buttons {
     position: relative;
     top: 50%;

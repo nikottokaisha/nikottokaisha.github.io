@@ -114,7 +114,6 @@ body {
     1px 1px 0 #000000;
 }
 
-
 .yuurei{
     text-shadow: 
     3px 3px 0 #000000,
@@ -125,7 +124,20 @@ body {
     opacity: 0.45;
 }
 
-.kore {
+.orange {
+    color: #FFCC33;
+    text-shadow: 
+    3px 3px 0 #000000,
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000; 
+    font-family: 'RocknRoll One', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.siro {
     color: white;
     text-shadow: 
     3px 3px 0 #000000,
@@ -167,7 +179,7 @@ body {
     background: #FFF;
     border: solid 6px #000000;/*線*/
     border-radius: 25px;/*角の丸み*/
-    top: 1892.5px;
+    top: 475px;
     font-family: 'Noto Sans JP', sans-serif;
 }
 .box2 p {
