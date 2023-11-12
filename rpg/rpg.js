@@ -134,7 +134,43 @@ function inputCheck() {
     }
     mae = 0;
     animy = 1;
-  }else { 
+    }else if(currentKey == 65) {
+      // 左
+      x = (posx - 1 + MapWidth) % MapWidth;
+      for (var i = 0; i < 2; i++) {
+        mae = 2;
+        imgReimu[i] = new Image();
+        imgReimu[i].src = "anime/hidari" + i + ".png";
+      }
+      animx = -1;
+    } else if (currentKey == 87) {
+      // 上
+      y = (posy - 1 + MapHeight) % MapHeight;
+      for (var i = 0; i < 2; i++) {
+        imgReimu[i] = new Image();
+        imgReimu[i].src = "anime/usiro" + i + ".png";
+      }
+      mae = 1;
+      animy = -1;
+    } else if (currentKey == 68) {
+      // 右
+      x = (posx + 1) % MapWidth;
+      animx = 1;
+      for (var i = 0; i < 2; i++) {
+        mae = 3;
+        imgReimu[i] = new Image();
+        imgReimu[i].src = "anime/migi" + i + ".png";
+      }
+    } else if (currentKey == 83) {
+      // 下
+      y = (posy + 1) % MapHeight;
+      for (var i = 0; i < 2; i++) {
+        imgReimu[i] = new Image();
+        imgReimu[i].src = "anime/mae" + i + ".png";
+      }
+      mae = 0;
+      animy = 1;
+    }else { 
     for (var i = 0; i < 2; i++) {
       imgReimu[i] = new Image();
       imgReimu[i].src = "anime/stop" + mae + ".png";
