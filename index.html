@@ -1,43 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>    
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikotto</title>
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="icon" type="image/png" href="image/favicon.png">
-    <meta property="twitter:title" content="ニコット">
-    <meta property="twitter:description" content="NikottoCard">
-    <meta property="twitter:image" content="">
-    <meta name="theme-color" content="#F1F1F1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NikottoRPG</title>
+	<style type="text/css">
+		#gamecanvas {
+			position: absolute;
+			top: 10px;
+			left: 19.5em;
+			width: 500px;
+			z-index: 1;
+			border: 3px solid #000;
+		}
+		.status {
+			font-size: 58px;
+			color: black;
+			position: absolute;
+			font-family: 'Noto Sans JP', sans-serif;
+			top: -10%;
+			left: 1000px;
+			z-index: 2;
+			text-align:center;
+		}
+		body {
+			background-color:#00a3ac;
+		}
+		.img {
+			width:0.01px;
+			height:0.01px;
+		}
+		.background {
+			position: absolute;
+			top: -25px;
+			left: -25px;
+			background-color: rgb(255, 255, 255);
+			width: 950px;
+			height: 550px;
+			border: 6.5px solid #000000;
+		}
+	</style>
+	<div class="status">
+		<br>
+		<a style="font-size:65px">ステータス</a><br>
+		<div id="name">お金</div>
+		<div id="okane">お金</div>
+		<div id="level"></div>
+		<div id="keiken">経験値</div>
+		<div id="hp">レベル</div>
+		<div id="atc">攻撃</div>
+		<div id="def">def</div>
+	</div>
+	<p class="img">
+		<img class="img" src="anime/hidari0.png">
+		<img class="img" src="anime/hidari1.png">
+		<img class="img" src="anime/migi0.png">
+		<img class="img" src="anime/migi1.png">
+		<img class="img" src="anime/usiro1.png">
+		<img class="img" src="anime/usiro0.png">
+		<img class="img" src="anime/mae0.png">
+		<img class="img" src="anime/mae1.png">
+		<img class="img" src="anime/stop0.png">
+		<img class="img" src="anime/stop1.png">
+		<img class="img" src="anime/stop2.png">
+		<img class="img" src="anime/stop3.png">
+	</p>
+	<p class="background"></p>
+	<script type="text/javascript" src="javascript.js"></script>	
 </head>
 <body>
-    <div class="logo">
-        <center>
-          <a href="https://nikottokaisha.github.io/card/packs/legends2">
-            <img  class="banner2" src="image/nikottocardlegends.png">
-          </a>
-        </center>
-    </div>
-    <p class="ue"></p>
-    <a class="ue1" href="https://nikottokaisha.github.io/gaiyo">概要</a>
-    <div class="buttons">
-        <div type="download" class="download">
-            <a class="button__text" href="https://nikottokaisha.github.io/rpg">RPG(Beta)</a>
-        </div>
-        <div type="discord" class="discord">
-            <a class="button__text" href="https://nikottokaisha.github.io/bank/">バンク</a>
-        </div>
-        <div type="osirase" class="osirase">
-            <a class="button__text" href="https://nikottokaisha.github.io/announcement">お知らせ</a>
-        </div>
-    </div>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script>
-    </script>
+	<canvas id="gamecanvas" width="480" height="480"></canvas>
 </body>
 </html>
