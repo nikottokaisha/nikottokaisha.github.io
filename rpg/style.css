@@ -1,0 +1,11 @@
+.gazouyomikomi {
+    width: 0.1px;
+    height: 0.1px;
+}
+#gamecanvas {
+    position: absolute;
+    top: 50px;
+    width: 40em;
+    left: 450px;
+    z-index: 1;
+}
